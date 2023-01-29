@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Code:wght@300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    @apply m-0 p-0 box-border transition-all delay-150 ease-in-out;
+}
+
+body {
+    @apply text-white bg-[#24262a];
+}
+
+.navlist>*:hover {
+    @apply text-gray-400;
+}
+.social-media>*:first-child{
+    @apply hover:text-instagram;
+}
+.social-media>*:nth-child(2) {
+    @apply hover:text-twitter;
+}
+.social-media>*:last-child{
+    @apply hover:text-navy-500;
+}
+.active {
+    @apply text-gray-400;
+}

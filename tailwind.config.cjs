@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "instagram": "#F94892",
+        "twitter": "#0081C9",
         "navy-100": "#2C74B3",
         "navy-200": "#205295",
         "navy-300": "#144272",

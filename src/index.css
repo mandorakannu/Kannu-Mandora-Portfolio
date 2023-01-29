@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.flexRowCenter {
+    @apply flex flex-row justify-center items-center;
+}
+
+.flexColCenter {
+    @apply flex flex-col justify-center items-center;
+}
+
+.flexRowAround {
+    @apply flex flex-row justify-around items-center;
+}
+
+.flexColAround {
+    @apply flex flex-col justify-around items-center;
+}
+
+.flexRowEvenly {
+    @apply flex flex-row justify-evenly items-center;
+}
+
+.flexColEvenly {
+    @apply flex flex-col justify-evenly items-center;
+}
