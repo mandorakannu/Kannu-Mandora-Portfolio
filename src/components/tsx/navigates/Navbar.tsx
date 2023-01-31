@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../assests/images/profilePicture.svg";
 import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
-import Hamburger from "./Hamburger";
+
 const Navbar = () => {
   return (
     <>
