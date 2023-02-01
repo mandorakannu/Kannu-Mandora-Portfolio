@@ -10,6 +10,7 @@ import { SiReact } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import Projects from "./tsx/Projects";
 
 const Entry = () => {
   return (
@@ -91,6 +92,7 @@ const Entry = () => {
           </div>
         </section>
       </div>
+      <Projects />
     </>
   );
 };
