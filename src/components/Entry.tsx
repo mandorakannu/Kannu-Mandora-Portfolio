@@ -30,7 +30,7 @@ const Entry = () => {
           </div>
         </div>
       </main>
-      <section className="flexColCenter bg-twitter py-20 px-2 gap-3">
+      <section id="About" className="flexColCenter bg-twitter py-20 px-2 gap-3">
         <h2 className="text-center text-3xl font-semibold">
           Hi there I'm Kannu Mandora
         </h2>
@@ -78,7 +78,7 @@ const Entry = () => {
       </div>
       {/* DEVELOPMENT SKILLS */}
       <div>
-        <section className="flexColCenter py-10">
+        <section className="flexColCenter py-10" id="Services" >
           <h1 className="text-3xl">DEVELOPMENT SKILLS</h1>
           <div className="grid max-sm:grid-cols-4 sm:grid-flow-col grid-rows-1 gap-10 my-10 px-4">
             <SiHtml5 className="text-6xl text-red-400" />
