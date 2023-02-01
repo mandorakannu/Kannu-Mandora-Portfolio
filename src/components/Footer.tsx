@@ -24,14 +24,14 @@ const Footer = () => {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start text-white">
-            <a className="">
-              <BsInstagram className="text-lg" />
+            <a href="https://instagram.com/psy.codes" target="_blank" >
+              <BsInstagram className="text-lg hover:text-instagram" />
             </a>
-            <a className="ml-3">
-              <AiFillGithub className="text-lg" />
+            <a className="ml-3" href="https://github.com/Kannu-Mandora" target="_blank" >
+              <AiFillGithub className="text-lg hover:text-gray-300" />
             </a>
-            <a className="ml-3">
-              <BsTwitter className="text-lg" />
+            <a className="ml-3" href="https://twitter.com/KannuMandora" target="_blank" >
+              <BsTwitter className="text-lg hover:text-twitter" />
             </a>
           </span>
         </div>

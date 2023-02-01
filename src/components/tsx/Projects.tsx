@@ -37,6 +37,7 @@ const Projects = () => {
                 src={image.src}
                 alt={image.alt}
                 className="w-2/3 rounded shadow pointer-events-none"
+                loading="lazy"
               />
             ))}
           </div>
