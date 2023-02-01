@@ -40,12 +40,12 @@ const Projects = () => {
               />
             ))}
           </div>
-          <Link
-            to="Projects"
+          <a 
+            href="https://github.com/Kannu-Mandora" target="_blank"
             className="text-center text-2xl my-10 p-3 bg-navy-500 text-white rounded w-2/3 hover:-translate-y-2 hover:shadow-xl"
           >
             Click Here For View Projects
-          </Link>
+          </a>
         </section>
       </div>
     </>
