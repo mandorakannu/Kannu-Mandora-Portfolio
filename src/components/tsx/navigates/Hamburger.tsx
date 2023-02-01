@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assests/images/profilePicture.svg";
-import onScrollNavbarColorChange from "../../../assests/ts/navigationColor";
+
 const Hamburger = () => {
-  onScrollNavbarColorChange();
   return (
     <>
-      <div className="sticky top-0 flexRowEvenly p-2 sm:hidden navbar">
+      <div className="flexRowEvenly p-2 sm:hidden">
         <Link to="/">
           <img src={logo} alt="logo" className="w-10" />
         </Link>

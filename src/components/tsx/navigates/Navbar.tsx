@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../assests/images/profilePicture.svg";
 import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
-import onScrollNavbarColorChange from "../../../assests/ts/navigationColor";
+
 const Navbar = () => {
-  onScrollNavbarColorChange();
   return (
     <>
-      <header className="sticky top-0 px-5 py-2 navbar">
+      <header className="px-5 py-2">
         <nav className="flexRowAround">
           <div className="flexRowCenter gap-4 max-sm:hidden">
             <NavLink to="/">
