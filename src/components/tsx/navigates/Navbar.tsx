@@ -11,12 +11,15 @@ const Navbar = () => {
       nav?.classList.remove("bg-gray-600");
     }
   });
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <header className="max-sm:hidden sticky top-0 px-5 py-2 pc-navbar">
         <nav className="flexRowAround">
           <div className="flexRowCenter gap-4 max-sm:hidden">
-            <NavLink to="/">
+            <NavLink to="/" onClick={scrollToTop} >
               <img src={logo} alt="logo" className="w-10" />
             </NavLink>
             <h1 className="cursor-default font-outfit">Kannu Mandora</h1>
@@ -36,11 +39,6 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="flexRowCenter gap-5 social-media max-sm:hidden">
-            <li>
-              <a href="https://www.instagram.com/mandorakannu/" target="_blank">
-                <BsInstagram />
-              </a>
-            </li>
             <li>
               <a href="https://twitter.com/KannuMandora" target="_blank">
                 <BsTwitter />
