@@ -3,9 +3,17 @@ import logo from "../../../assests/images/profilePicture.svg";
 import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 
 const Navbar = () => {
+  window.addEventListener("scroll", () => {
+    const nav = document.querySelector(".pc-navbar");
+    if (window.scrollY > 0) {
+      nav?.classList.add("bg-gray-600");
+    } else {
+      nav?.classList.remove("bg-gray-600");
+    }
+  });
   return (
     <>
-      <header className="sticky top-0 px-5 py-2">
+      <header className="max-sm:hidden sticky top-0 px-5 py-2 pc-navbar">
         <nav className="flexRowAround">
           <div className="flexRowCenter gap-4 max-sm:hidden">
             <NavLink to="/">

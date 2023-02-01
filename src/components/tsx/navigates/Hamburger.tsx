@@ -2,9 +2,17 @@ import { Link } from "react-router-dom";
 import logo from "../../../assests/images/profilePicture.svg";
 
 const Hamburger = () => {
+  window.addEventListener("scroll", () => {
+    const hamburger = document.querySelector(".sm-navbar");
+    if(window.scrollY > 0) {
+      hamburger?.classList.add("bg-gray-600");
+    } else {
+      hamburger?.classList.remove("bg-gray-600");
+    }
+  })
   return (
     <>
-      <div className="sticky top-0 flexRowEvenly p-2 sm:hidden">
+      <header className="sticky top-0 flexRowEvenly p-2 sm:hidden sm-navbar">
         <Link to="/">
           <img src={logo} alt="logo" className="w-10" />
         </Link>
@@ -13,7 +21,7 @@ const Hamburger = () => {
           <span className="block w-5 h-0.5 bg-white"></span>
           <span className="block w-8 h-0.5 bg-white"></span>
         </div>
-      </div>
+      </header>
     </>
   );
 };
