@@ -5,7 +5,7 @@ import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 const Navbar = () => {
   return (
     <>
-      <header className="px-5 py-2">
+      <header className="sticky top-0 px-5 py-2">
         <nav className="flexRowAround">
           <div className="flexRowCenter gap-4 max-sm:hidden">
             <NavLink to="/">

@@ -4,7 +4,7 @@ import logo from "../../../assests/images/profilePicture.svg";
 const Hamburger = () => {
   return (
     <>
-      <div className="flexRowEvenly p-2 sm:hidden">
+      <div className="sticky top-0 flexRowEvenly p-2 sm:hidden">
         <Link to="/">
           <img src={logo} alt="logo" className="w-10" />
         </Link>
