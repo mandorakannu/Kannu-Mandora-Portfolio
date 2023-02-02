@@ -21,10 +21,10 @@ const Projects = () => {
   return (
     <>
       <div className="flexColCenter bg-white text-black font-outfit py-20">
-        <h1 className="text-center text-3xl my-10 text-navy-100">
+        <h1 className="text-center text-5xl my-10 text-navy-100" data-aos="fade"  >
           Projects
         </h1>
-        <p className="text-center sm:w-1/2 text-xl">
+        <p className="text-center sm:w-1/2 text-xl" data-aos="fade-up">
           Listed below are some of the most representative projects I've worked
           on. They range from basic web design for presentation sites to
           advanced web development.
@@ -38,11 +38,12 @@ const Projects = () => {
                 alt={image.alt}
                 className="w-2/3 rounded shadow pointer-events-none"
                 loading="lazy"
+                data-aos="zoom-in"
               />
             ))}
           </div>
           <a 
-            href="https://github.com/Kannu-Mandora" target="_blank"
+            href="https://github.com/Kannu-Mandora" target="_blank" data-aos="fade"
             className="text-center text-2xl my-10 p-3 bg-navy-500 text-white rounded w-2/3 hover:-translate-y-2 hover:shadow-xl"
           >
             Click Here For View Projects

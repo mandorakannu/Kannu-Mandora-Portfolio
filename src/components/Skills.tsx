@@ -12,8 +12,8 @@ const Skills = () => {
     <>
       {/* DEVELOPMENT SKILLS */}
       <section className="flexColCenter py-10" id="Services">
-        <h1 className="text-3xl">DEVELOPMENT SKILLS</h1>
-        <div className="grid max-sm:grid-cols-4 sm:grid-flow-col grid-rows-1 gap-10 my-10 px-4">
+        <h1 className="text-3xl"data-aos="fade" >DEVELOPMENT SKILLS</h1>
+        <div className="grid max-sm:grid-cols-4 sm:grid-flow-col grid-rows-1 gap-10 my-10 px-4" data-aos="zoom-in" >
           <SiHtml5 className="text-6xl text-red-400" />
           <SiCss3 className="text-6xl text-blue-400 " />
           <SiTailwindcss className="text-6xl text-sky-500 " />
