@@ -1,8 +1,6 @@
 import { Suspense, lazy } from "react";
 import { IoMdPerson } from "react-icons/io";
-import { SlDiamond } from "react-icons/sl";
-import { HiOutlineCode } from "react-icons/hi";
-import { MdComputer } from "react-icons/md";
+import MySkills from "./MySkills";
 const Skills = lazy(() => import("../components/Skills"));
 const Projects = lazy(() => import("../components/tsx/Projects"));
 
@@ -36,41 +34,7 @@ const Entry = () => {
       </section>
       <Suspense fallback={<div className="text-center">Loading...</div>}>
         {/* Skills */}
-        <div className="bg-white text-black flexColCenter py-20 h-max font-DMSans">
-          <h2 className="text-4xl font-outfit text-center" data-aos="zoom-in">My Skills</h2>
-          <p className="my-10 text-xl px-2 text-center" data-aos="zoom-in">
-            Web Development have been my bread and butter for more than 2 years.
-          </p>
-          <div className="flex max-sm:flex-col justify-center items-center">
-            <section className="flexColCenter gap-5 border-2 border-gray-300 m-4 p-6">
-              <SlDiamond className="text-5xl text-navy-100" data-aos="fade-up" />
-              <h3 className="text-3xl font-outfit" data-aos="fade-up">Design</h3>
-              <p className="text-center" data-aos="fade-up">
-                Successful online projects start with good design. It
-                establishes a solid foundation for future development and allows
-                for long term growth.
-              </p>
-            </section>
-            <section className="flexColCenter gap-5 border-2 border-gray-300 m-4 p-6">
-              <HiOutlineCode className="text-5xl text-navy-100" data-aos="fade-up" />
-              <h3 className="text-3xl font-outfit" data-aos="fade-up">DEVELOPMENT</h3>
-              <p className="text-center" data-aos="fade-up">
-                I can code my own designs or even use the customer's design as
-                base. My focus is to generate clean code that's well structured
-                for reliability.
-              </p>
-            </section>
-            <section className="flexColCenter gap-5 border-2 border-gray-300 m-4 p-6">
-              <MdComputer className="text-5xl text-navy-100" data-aos="fade-up" />
-              <h3 className="text-3xl font-outfit" data-aos="fade-up">BASIC SEO</h3>
-              <p className="text-center" data-aos="fade-up">
-                I can setup your project to use basic SEO principles which will
-                push your project to the first page on search engines and save
-                you ads money.
-              </p>
-            </section>
-          </div>
-        </div>
+        <MySkills />
         <Skills />
         <Projects />
       </Suspense>
