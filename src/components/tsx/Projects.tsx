@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import shriRamCollege from "../../assests/images/shriRamCollege.png";
-import amanChopra from "../../assests/images/amanChopra.png";
-import todo from "../../assests/images/todo.png";
+import shriRamCollege from "../../assests/images/shriRamCollege.webp";
+import amanChopra from "../../assests/images/amanChopra.webp";
+import todo from "../../assests/images/todo.webp";
 
 const Projects = () => {
   const images = [
