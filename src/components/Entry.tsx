@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 import { IoMdPerson } from "react-icons/io";
-import MySkills from "./MySkills";
+const MySkills = lazy(() => import("../components/MySkills"));
 const Skills = lazy(() => import("../components/Skills"));
 const Projects = lazy(() => import("../components/tsx/Projects"));
 
