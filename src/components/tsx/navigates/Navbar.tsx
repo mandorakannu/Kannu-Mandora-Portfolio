@@ -16,7 +16,7 @@ const Navbar = () => {
   }
   return (
     <>
-      <header className="max-sm:hidden sticky top-0 px-5 py-2 pc-navbar">
+      <header className="max-sm:hidden sticky top-0 z-50 px-5 py-2 pc-navbar">
         <nav className="flexRowAround">
           <div className="flexRowCenter gap-4 max-sm:hidden">
             <NavLink to="/" onClick={scrollToTop} >

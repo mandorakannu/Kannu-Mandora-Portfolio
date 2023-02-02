@@ -12,7 +12,7 @@ const Hamburger = () => {
   })
   return (
     <>
-      <header className="sticky top-0 flexRowEvenly p-2 sm:hidden sm-navbar">
+      <header className="sticky top-0 flexRowEvenly p-2 sm:hidden sm-navbar z-50">
         <Link to="/">
           <img src={logo} alt="logo" className="w-10" />
         </Link>
