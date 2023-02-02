@@ -12,9 +12,6 @@ body {
     @apply text-gray-400;
 }
 .social-media>*:first-child{
-    @apply hover:text-instagram;
-}
-.social-media>*:nth-child(2) {
     @apply hover:text-twitter;
 }
 .social-media>*:last-child{

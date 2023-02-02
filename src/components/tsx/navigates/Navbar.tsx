@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
           <ul className="flexRowCenter gap-5 navlist max-sm:hidden">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" onClick={scrollToTop} >Home</NavLink>
             </li>
             <li>
               <a href="#About">About</a>
