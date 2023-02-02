@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://mandorakannu.tech/sitemap.xml
