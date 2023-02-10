@@ -5,6 +5,10 @@ const Skills = lazy(() => import("../components/Skills"));
 const Projects = lazy(() => import("../components/tsx/Projects"));
 
 const Entry = () => {
+  const moveToAbout = () => {
+    const about = document.getElementById("About");
+    about?.scrollIntoView();
+  }
   return (
     <>
       <main>
@@ -13,7 +17,7 @@ const Entry = () => {
             I love to create beautiful and efficient websites
           </h1>
           <div className="flex items-center my-5 gap-5" data-aos="fade" >
-            <button className="bg-twitter hover:bg-navy-200  p-3 rounded font-DMSans">
+            <button className="bg-twitter hover:bg-navy-200  p-3 rounded font-DMSans" onClick={moveToAbout}>
               Discover
             </button>
             <button className="flex items-center gap-1 font-DMSans hover:text-instagram">
