@@ -35,9 +35,8 @@ const Projects = () => {
         <section className="flexColCenter">
           <div className="grid grid-cols-3 max-sm:grid-cols-1 place-items-center my-10 font-DMSans gap-5">
             {images.map((image, index) => (
-              <a href={image.link} target="_blank" className="grid place-items-center" >
+              <a key={index} href={image.link} target="_blank" className="grid place-items-center" >
               <img
-              key={index}
               src={image.src}
               alt={image.alt}
               className="w-2/3 rounded shadow pointer-events-none"
