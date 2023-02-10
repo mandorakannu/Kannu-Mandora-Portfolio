@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assests/images/profilePicture.svg";
+import logo from "../../../assests/images/dp.webp";
 import {  BsTwitter, BsGithub } from "react-icons/bs";
 const Hamburger = () => {
   window.addEventListener("scroll", () => {

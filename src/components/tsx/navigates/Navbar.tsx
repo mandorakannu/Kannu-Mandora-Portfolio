@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../../assests/images/profilePicture.svg";
-import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+import Logo, { Instagram, Twitter, GitHub } from "../Images";
 
 const Navbar = () => {
   window.addEventListener("scroll", () => {
@@ -20,7 +19,7 @@ const Navbar = () => {
         <nav className="flexRowAround">
           <div className="flexRowCenter gap-4 max-sm:hidden">
             <NavLink to="/" onClick={scrollToTop} >
-              <img src={logo} alt="logo" className="w-10" />
+              <Logo />
             </NavLink>
             <h1 className="cursor-default font-outfit">Kannu Mandora</h1>
           </div>
@@ -38,18 +37,10 @@ const Navbar = () => {
               <NavLink to="Projects">Projects</NavLink>
             </li>
           </ul>
-          <ul className="flexRowCenter gap-5 social-media max-sm:hidden">
-            <li>
-              <a href="https://twitter.com/KannuMandora" target="_blank">
-                <BsTwitter />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Kannu-Mandora" target="_blank">
-                <BsGithub />
-              </a>
-            </li>
-          </ul>
+          <div className="flexRowCenter" >
+              <Twitter />
+              <GitHub />
+          </div>
         </nav>
       </header>
     </>

@@ -39,7 +39,7 @@ const Projects = () => {
               <img
               src={image.src}
               alt={image.alt}
-              className="w-2/3 rounded shadow pointer-events-none"
+              className="w-2/3 rounded shadow pointer-events-none hover:shadow-2xl"
               loading="lazy"
               data-aos="zoom-in"
               />
