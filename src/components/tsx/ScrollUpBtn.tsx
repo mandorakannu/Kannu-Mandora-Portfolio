@@ -7,7 +7,7 @@ const ScrollUpBtn = () => {
   })
   return (
     <>
-        <BiUpArrowAlt onClick={()=> window.scroll(0,0)} className="scrollToTop cursor-pointer fixed right-10 bottom-20 bg-navy-100 p-2 text-5xl rounded-full hidden" />
+        <BiUpArrowAlt onClick={()=> window.scroll(0,0)} className="scrollToTop cursor-pointer fixed right-10 bottom-20 bg-navy-100 p-2 text-5xl rounded-full hidden z-50" />
     </>
   );
 };

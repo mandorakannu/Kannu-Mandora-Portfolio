@@ -8,14 +8,17 @@ const Projects = () => {
     {
       src: shriRamCollege,
       alt: "Shri Ram College",
+      link: "https://charming-erin-dibbler.cyclic.app/"
     },
     {
       src: amanChopra,
       alt: "Aman Chopra",
+      link: "https://aman-chopra.vercel.app"
     },
     {
       src: todo,
       alt: "Todo",
+      link: "https://todo-nine-sigma.vercel.app/"
     },
   ];
   return (
@@ -32,19 +35,21 @@ const Projects = () => {
         <section className="flexColCenter">
           <div className="grid grid-cols-3 max-sm:grid-cols-1 place-items-center my-10 font-DMSans gap-5">
             {images.map((image, index) => (
+              <a href={image.link} target="_blank" className="grid place-items-center" >
               <img
               key={index}
-                src={image.src}
-                alt={image.alt}
-                className="w-2/3 rounded shadow pointer-events-none"
-                loading="lazy"
-                data-aos="zoom-in"
+              src={image.src}
+              alt={image.alt}
+              className="w-2/3 rounded shadow pointer-events-none"
+              loading="lazy"
+              data-aos="zoom-in"
               />
+              </a>
             ))}
           </div>
           <a 
             href="https://github.com/Kannu-Mandora" target="_blank" data-aos="fade"
-            className="text-center text-2xl my-10 p-3 bg-navy-500 text-white rounded w-2/3 hover:-translate-y-2 hover:shadow-xl"
+            className="text-center text-2xl my-10 p-3 bg-navy-500 text-white rounded w-2/3 hover:shadow-xl"
           >
             Click Here For View Projects
           </a>
